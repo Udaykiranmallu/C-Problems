@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+  int a=4,b=5;
+  int c;
+  c=a*b;
+  printf("%d\n",c);
+  int A=10,B=2;
+  int C;
+  C=A*B;
+  printf("%d\n",C);
+  int x=1,y=20;
+  int z;
+  z=x*y;
+  printf("%d\n",z);
+    
+    return 0;
+}
