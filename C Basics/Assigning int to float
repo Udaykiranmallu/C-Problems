@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+   int a=10;
+   float f;
+   f=a;
+   printf("%.1f\n",f);
+
+   a=25;
+  f=a; 
+   printf("%.1f\n",f);
+    
+    return 0;
+}
