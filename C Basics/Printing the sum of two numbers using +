@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int a=5,b=5;
+    int c;
+    c=a+b;
+    printf("%d\n",c);
+    int d=7,e=3;
+    int f;
+    f=d+e;
+    printf("%d\n",f);
+    int x=8,y=2;
+    int z;
+    z=x+y;
+    printf("%d\n",z);
+
+    
+    
+    return 0;
+}
