@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+   int Quotient,Remainder;
+   int a=9,b=2;
+   Quotient=a/b;
+   Remainder=a%b;
+
+   printf("Quotient=%d  Remainder=%d\n",Quotient,Remainder);
+   int x=10,y=3;
+   Quotient=x/y;
+   Remainder=x%y;
+   printf("Quotient=%d  Remainder=%d\n",Quotient,Remainder);
+   int A=20,B=4;
+   Quotient=A/B;
+   Remainder=A%B;
+   printf("Quotient=%d  Remainder=%d",Quotient,Remainder);
+    
+    return 0;
+}
