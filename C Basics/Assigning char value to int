@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+   char ch1='A';
+   int x=ch1;
+   printf("%d\n",x);
+   char ch2='a';
+   int y=ch2;
+  
+   printf("%d\n",y);
+    return 0;
+}
