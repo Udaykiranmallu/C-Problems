@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+   int a=8,b=3;
+   int c;
+   c=a-b;
+   printf("%d\n",c);
+   int A=10,B=5;
+   int C;
+   C=A-B;
+   printf("%d\n",C);
+   int x=15,y=10;
+   int z;
+   z=x-y;
+   printf("%d\n",z);
+    return 0;
+}
