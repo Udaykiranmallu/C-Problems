@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int N, K;
+    scanf("%d %d", &N, &K);
+
+    int result = N ^ (1 << K);
+    printf("%d", result);
+
+    return 0;
+}
