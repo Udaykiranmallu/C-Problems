@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int length;
+
+    // Read email length
+    scanf("%d", &length);
+
+    // Check email validity
+    if (length > 5) {
+        printf("Valid Email");
+    } else {
+        printf("Invalid Email");
+    }
+
+    return 0;
+}
