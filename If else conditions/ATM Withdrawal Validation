@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int amount;
+
+    // Read withdrawal amount
+    scanf("%d", &amount);
+
+    // Check if amount is multiple of 100
+    if (amount % 100 == 0) {
+        printf("Valid Amount");
+    } else {
+        printf("Invalid Amount");
+    }
+
+    return 0;
+}
