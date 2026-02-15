@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int userType;
+
+    // Read user type number
+    scanf("%d", &userType);
+
+    // Identify role
+    if (userType == 1) {
+        printf("Admin");
+    } else if (userType == 2) {
+        printf("User");
+    } else if (userType == 3) {
+        printf("Guest");
+    } else {
+        printf("Invalid Role");
+    }
+
+    return 0;
+}
