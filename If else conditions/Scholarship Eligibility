@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int marks;
+    int income;
+
+    // Read marks and income
+    scanf("%d %d", &marks, &income);
+
+    // Check scholarship eligibility
+    if (marks >= 85 && income < 300000) {
+        printf("Eligible");
+    } else {
+        printf("Not Eligible");
+    }
+
+    return 0;
+}
