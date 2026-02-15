@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int attempts;
+
+    // Read number of login attempts
+    scanf("%d", &attempts);
+
+    // Check account status
+    if (attempts > 3) {
+        printf("Account Locked");
+    } else {
+        printf("Login Allowed");
+    }
+
+    return 0;
+}
