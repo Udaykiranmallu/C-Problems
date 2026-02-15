@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float data;
+
+    // Read data usage in GB
+    scanf("%f", &data);
+
+    // Check data usage
+    if (data > 2.0) {
+        printf("Data limit exceeded");
+    } else {
+        printf("Data within limit");
+    }
+
+    return 0;
+}
