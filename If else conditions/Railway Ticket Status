@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int seats;
+
+    // Read number of available seats
+    scanf("%d", &seats);
+
+    // Check ticket status
+    if (seats > 0) {
+        printf("Confirmed");
+    } else {
+        printf("Waiting List");
+    }
+
+    return 0;
+}
