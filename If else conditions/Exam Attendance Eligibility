@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int attendance;
+
+    // Read attendance percentage
+    scanf("%d", &attendance);
+
+    // Check eligibility
+    if (attendance >= 75) {
+        printf("Eligible for Exam");
+    } else {
+        printf("Not Eligible");
+    }
+
+    return 0;
+}
