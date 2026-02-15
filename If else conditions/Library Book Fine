@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int days;
+
+    // Read number of days book is returned late
+    scanf("%d", &days);
+
+    // Check fine status
+    if (days > 7) {
+        printf("Fine Applied");
+    } else {
+        printf("No Fine");
+    }
+
+    return 0;
+}
