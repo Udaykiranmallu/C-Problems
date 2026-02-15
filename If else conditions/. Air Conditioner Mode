@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int temp;
+
+    // Read temperature
+    scanf("%d", &temp);
+
+    // Set AC mode
+    if (temp < 20) {
+        printf("Heating Mode");
+    } else if (temp <= 29) {
+        printf("Normal Mode");
+    } else {
+        printf("Cooling Mode");
+    }
+
+    return 0;
+}
