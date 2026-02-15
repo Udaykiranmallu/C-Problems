@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int marks;
+
+    // Read student marks
+    scanf("%d", &marks);
+
+    // Classify result
+    if (marks < 40) {
+        printf("Fail");
+    } else if (marks <= 74) {
+        printf("Pass");
+    } else {
+        printf("Distinction");
+    }
+
+    return 0;
+}
