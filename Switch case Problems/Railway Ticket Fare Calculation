@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int class, age;
+    int fare = 0;
+
+    scanf("%d", &class);
+    scanf("%d", &age);
+
+    switch(class) {
+        case 1:  // Sleeper
+            fare = 300;
+
+            if(age < 12) {
+                fare = fare / 2;   // 50% discount
+            }
+            else if(age >= 60) {
+                fare = fare - (fare / 3);  // 33% discount
+            }
+            break;
+
+        case 2:  // AC
+            fare = 1000;
+
+            if(age < 12) {
+                fare = fare / 2;   // 50% discount
+            }
+            break;
+
+        default:
+            printf("INVALID Input");
+            return 0;
+    }
+
+    printf("Fare %d", fare);
+
+    return 0;
+}
