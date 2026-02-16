@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    int planType;
+    int paymentMode;   // 11 = UPI, 12 = Card, 13 = Wallet
+    int amount = 0;
+    int cashback = 0;
+
+    scanf("%d", &planType);
+    scanf("%d", &paymentMode);
+
+    switch(planType) {
+        case 1:
+            amount = 199;
+            break;
+
+        case 2:
+            amount = 399;
+            break;
+
+        default:
+            printf("Invalid Plan");
+            return 0;
+    }
+
+    switch(paymentMode) {
+        case 11:   // UPI
+        case 12:   // Card
+            cashback = 20;
+            break;
+
+        case 13:   // Wallet
+            cashback = 0;
+            break;
+
+        default:
+            printf("Invalid Payment Mode");
+            return 0;
+    }
+
+    printf("Pay %d", amount - cashback);
+
+    return 0;
+}
