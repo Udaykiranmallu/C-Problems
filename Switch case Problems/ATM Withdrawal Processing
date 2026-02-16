@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+   int accounttype,withdrawl,balance;
+   scanf("%d %d %d",&accounttype,&withdrawl,&balance);
+   switch(accounttype){
+    case 1:
+    if(balance>=withdrawl)
+    printf("BALANCE ALLOWED");
+    else
+    printf("Transaction rejected");
+    break;
+    case 2:
+    if(withdrawl<=5000)
+    printf("BALANCE ALLOWED");
+    else
+    printf("limit exceeds");
+    break;
+    default:
+    printf("Invalid amount");
+
+   }
+    return 0;
+}
