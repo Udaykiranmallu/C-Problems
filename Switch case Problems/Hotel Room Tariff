@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int roomType;
+    char season;
+    int tariff = 0;
+
+    scanf("%d", &roomType);
+    scanf(" %c", &season);  // space before %c to ignore newline
+
+    switch(roomType) {
+        case 1:  // Standard
+            if(season == 'A')
+                tariff = 2500;
+            else if(season == 'B')
+                tariff = 2000;
+            break;
+
+        case 2:  // Deluxe
+            if(season == 'C')
+                tariff = 4000;
+            else if(season == 'D')
+                tariff = 3000;
+            break;
+
+        default:
+            printf("Invalid Input");
+            return 0;
+    }
+
+    if(tariff > 0)
+        printf("₹%d", tariff);
+    else
+        printf("Invalid Input");
+
+    return 0;
+}
