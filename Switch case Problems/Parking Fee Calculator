@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int vehicleType, hours;
+    int ratePerHour;
+    int totalFee;
+
+    // Input
+    scanf("%d", &vehicleType);
+    scanf("%d", &hours);
+
+    switch(vehicleType) {
+        case 1:  // Bike
+            ratePerHour = 10;
+            break;
+
+        case 2:  // Car
+            ratePerHour = 20;
+            break;
+
+        default:  // Invalid type → default charge
+            ratePerHour = 20;
+    }
+
+    totalFee = ratePerHour * hours;
+
+    printf("Parking Fee ₹%d\n", totalFee);
+
+    return 0;
+}
