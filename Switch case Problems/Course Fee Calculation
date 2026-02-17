@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main() {
+    int mode;
+    char category;
+    int fee = 0;
+
+    // Input
+    scanf("%d", &mode);
+    scanf(" %c", &category);  // space before %c to avoid newline issue
+
+    switch(mode) {
+        case 1:  // Online
+            switch(category) {
+                case 'R':
+                case 'r':
+                    fee = 5000;
+                    break;
+                case 'S':
+                case 's':
+                    fee = 3000;
+                    break;
+                default:
+                    printf("Invalid Category\n");
+                    return 0;
+            }
+            break;
+
+        case 2:  // Offline
+            switch(category) {
+                case 'R':
+                case 'r':
+                    fee = 9000;
+                    break;
+                case 'S':
+                case 's':
+                    fee = 7000;
+                    break;
+                default:
+                    printf("Invalid Category\n");
+                    return 0;
+            }
+            break;
+
+        default:
+            printf("Invalid Mode\n");
+            return 0;
+    }
+
+    printf("₹%d\n", fee);
+
+    return 0;
+}
