@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int seatType, showTime;
+    int price;
+
+    // Input
+    scanf("%d %d", &seatType, &showTime);
+
+    // Determine base price using switch-case
+    switch(seatType) {
+        case 1:  // Silver
+            price = 150;
+            break;
+
+        case 2:  // Gold
+            price = 250;
+            break;
+
+        default:
+            price = 0;   // Invalid seat type
+    }
+
+    // Add extra charge for night show
+    if (showTime >= 18) {
+        price += 50;
+    }
+
+    // Output
+    printf("Ticket Price ₹%d", price);
+
+    return 0;
+}
