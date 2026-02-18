@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int vechicleType,hours;
+    int rate,totalfee;
+    scanf("%d",&vechicleType);
+    scanf("%d",&hours);
+    switch(vechicleType){
+    
+    case 1:
+    rate=10;
+    break;
+    case 2:
+    rate=20;
+    break;
+    default:
+    rate=20;
+    }
+    totalfee=rate*hours;
+    printf("%d is totalfee",totalfee);
+    
+    return 0;
+}
