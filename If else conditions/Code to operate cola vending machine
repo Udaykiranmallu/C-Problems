@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int stock = 5;        
+    int quantity;         
+    int price = 2;        
+    int totalAmount;
+    int money;
+
+    printf(" COLA VENDING MACHINE \n");
+    printf("Price per Cola: Rs.%d\n", price);
+    printf("Available Stock: %d\n", stock);
+
+    printf("Enter number of colas you want: ");
+    scanf("%d", &quantity);
+
+    if(quantity > stock) {
+        printf("Insufficient Colas!\n");
+    }
+    else {
+        totalAmount = quantity * price;
+        printf("Total Amount: Rs.%d\n", totalAmount);
+
+        printf("Insert Money: ");
+        scanf("%d", &money);
+
+        if(money >= totalAmount) {
+            printf("Dispensing %d Cola(s)...\n", quantity);
+            printf("Returning Balance: Rs.%d\n", money - totalAmount);
+            stock -= quantity;
+            printf("Remaining Stock: %d\n", stock);
+        }
+        else {
+            printf("Insufficient Money! Need Rs.%d more\n", totalAmount - money);
+        }
+    }
+
+    return 0;
+}
