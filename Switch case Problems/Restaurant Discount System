@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int customerType;
+    int billAmount;
+    float discount = 0;
+    float finalAmount;
+
+    scanf("%d", &customerType);
+    scanf("%d", &billAmount);
+
+    switch(customerType) {
+        case 1:
+            discount = 0.05;  
+            break;
+        case 2:
+            discount = 0.15;   
+            break;
+        default:
+            discount = 0;
+    }
+
+    finalAmount = billAmount - (billAmount * discount);
+
+    printf("Pay $%.0f", finalAmount);
+
+    return 0;
+}
