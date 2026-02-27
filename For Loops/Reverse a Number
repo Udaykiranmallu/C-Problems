@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+   int rev;
+   
+   int n;
+   scanf("%d",&n);
+   for( ;n!=0;n/=10){
+    int  rem=n%10;
+    rev=rev*10+rem;
+     
+   }
+ printf("%d",rev);
+    
+    return 0;
+}
