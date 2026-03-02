@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int count = 0;
+
+    for(int num = 2; num <= N; num++) {
+        int isPrime = 1;
+
+        for(int i = 2; i < num; i++) {
+            if(num % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+
+        if(isPrime) {
+            count++;
+        }
+    }
+
+    printf("%d", count);
+
+    return 0;
+}
