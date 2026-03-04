@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int salary, absentDays;
+    int finalSalary;
+
+    scanf("%d", &salary);
+    scanf("%d", &absentDays);
+
+    finalSalary = salary - (absentDays * 100);
+
+    printf("Final Salary: ₹%d", finalSalary);
+
+    return 0;
+}
