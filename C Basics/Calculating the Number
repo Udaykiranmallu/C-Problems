@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int a,b;
+    int sum;
+    int diff;
+    scanf("%d %d",&a,&b);
+    sum=a+b;
+    diff=sum-a;
+    printf("%d",diff);
+    
+    return 0;
+}
