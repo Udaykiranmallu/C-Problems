@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int vehicleType, distance;
+    int rate, fare;
+
+    scanf("%d", &vehicleType);
+    scanf("%d", &distance);
+
+    switch(vehicleType) {
+        case 1:
+            rate = 10;   
+            break;
+        case 2:
+            rate = 15;  
+            break;
+        case 3:
+            rate = 20;  
+            break;
+        default:
+            rate = 0;
+    }
+
+    if(rate != 0) {
+        fare = rate * distance;
+        printf("Fare ₹%d", fare);
+    } else {
+        printf("Invalid Vehicle Type");
+    }
+
+    return 0;
+}
